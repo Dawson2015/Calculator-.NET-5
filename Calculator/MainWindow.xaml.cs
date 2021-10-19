@@ -123,6 +123,18 @@ namespace Calculator
             }
         }
 
+        private void pointButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (resultLabel.Content.ToString().Contains("."))
+            {
+                //Do nothing
+            }
+            else
+            {
+                resultLabel.Content = $"{resultLabel.Content}.";
+            }
+        }
+
         private void NumberButton_Click(object sender, RoutedEventArgs e)
         {
             //int selectedValue = 0;
