@@ -20,10 +20,28 @@ namespace Calculator
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        double lastNumber,result;
+        public MainWindow()//constructor
         {
             InitializeComponent();
-            resultLabel.Content = "123";
+            //resultLabel.Content = "123";
+            acButton.Click += AcButton_Click;
+            negativeButton.Click += NegativeButton_Click;
+        }
+
+        private void NegativeButton_Click(object sender, RoutedEventArgs e)
+        {
+            //resultLabel.Content = $"-{resultLabel.Content}";
+            if(Double.TryParse(resultLabel.Content.ToString(), out lastNumber))
+            {
+                lastNumber = lastNumber * -1;
+                resultLabel.Content = lastNumber.ToString();
+            }
+        }
+
+        private void AcButton_Click(object sender, RoutedEventArgs e)//event handler method
+        {
+            resultLabel.Content = "0";
         }
 
         private void sevenButton_Click(object sender, RoutedEventArgs e)

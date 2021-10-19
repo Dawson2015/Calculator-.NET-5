@@ -33,7 +33,7 @@
                 Grid.Row="1"
                 Grid.Column="0"/>
         <Button x:Name="negativeButton"
-                Content="+/1"
+                Content="+/-"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="1"/>
@@ -42,7 +42,8 @@
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="2"/>
-        <Button Content="/"
+        <Button x:Name="slashButton"
+                Content="/"
                 Margin="5"
                 Grid.Row="1"
                 Grid.Column="3"/>
@@ -63,20 +64,24 @@
                 Margin="5"
                 Grid.Row="2"
                 Grid.Column="2"/>
-        <Button Content="*"
+        <Button x:Name="multipleButton"
+                Content="*"
                 Margin="5"
                 Grid.Row="2"
                 Grid.Column="3"/>
 
-        <Button Content="4"
+        <Button x:Name="fourButton"
+                Content="4"
                 Margin="5"
                 Grid.Row="3"
                 Grid.Column="0"/>
-        <Button Content="5"
+        <Button x:Name="fiveButton"
+                Content="5"
                 Margin="5"
                 Grid.Row="3"
                 Grid.Column="1"/>
-        <Button Content="6"
+        <Button x:Name="sixButton"
+                Content="6"
                 Margin="5"
                 Grid.Row="3"
                 Grid.Column="2"/>
